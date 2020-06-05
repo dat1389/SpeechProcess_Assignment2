@@ -12,9 +12,9 @@ class SpeechApp(QMainWindow):
         super(SpeechApp, self).__init__()
         self.setWindowTitle("SP-APP")
         self.setFixedSize(400,300)
-
+        self.setWindowIcon(QtGui.QIcon('icon.png'))
         self.RECORDING = False
-        
+        self.setStyleSheet("background-color: #ffd5bc;")
         self.recordingThread = None
         self.q = queue.Queue()
 
